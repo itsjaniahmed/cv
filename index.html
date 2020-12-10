@@ -1,288 +1,761 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jani Ahmed - Résumé</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
-  min-height: 100%;
-}
+        .Navbar ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0
+        }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box
+        }
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit
+        }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+        body {
+            margin: 0;
+            background-color: #fff
+        }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
-<body>
+        img {
+            max-width: 100%;
+            height: auto
+        }
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
+        .u-cf:before,
+        .u-cf:after {
+            content: " ";
+            display: table
+        }
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
+        .u-cf:after {
+            clear: both
+        }
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
-</div>
+        .u-hug {
+            margin-top: 0 !important
+        }
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
+        .u-pullRight {
+            float: right
+        }
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-</div>
+        .u-keyline {
+            position: relative
+        }
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
+        .u-keyline:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #ddd
+        }
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
+        .u-link {
+            text-decoration: none;
+            position: relative;
+            display: inline-block
+        }
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+        .u-link:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: .2em;
+            width: 100%;
+            height: 2px;
+            background-color: #96ddcf
+        }
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
+        .u-link:visited:before {
+            background-color: #ddd
+        }
 
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
+        .u-link:hover:before {
+            background-color: #fa8072
+        }
 
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
+        .u-shadow {
+            text-shadow: 4px 4px 0 #6fd1bd;
+            transition: text-shadow .2s ease-in-out
+        }
 
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
+        a:hover .u-shadow {
+            text-shadow: -4px -4px 0 salmon
+        }
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
+        @media (max-width:767px) {
+            .u-hidden\@sm-down {
+                display: none !important
+            }
+        }
 
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
+        @media (max-width:543px) {
+            .u-hidden\@xs-down {
+                display: none !important
+            }
+        }
 
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
+        body {
+            color: #333;
+            font-size: 1.6rem;
+            font-family: Lato, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            line-height: 1.5;
+            letter-spacing: .008em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
 
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #111;
+            line-height: 1.2;
+            font-weight: 900
+        }
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        p {
+            margin-top: 1.6rem;
+            margin-bottom: 0
+        }
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
+        h3,
+        .h3 {
+            font-size: 2rem;
+            margin-top: 3.2rem
+        }
 
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+        a {
+            color: #333
+        }
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+        ul {
+            padding-left: 1.8rem
+        }
+
+        .Title {
+            font-size: 50px;
+            font-size: 8vw;
+            font-family: Lato, 'Open Sans', Helvetica, Arial;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            display: inline-block
+        }
+
+        @media (max-width:525px) {
+            .Title {
+                font-size: 42px
+            }
+        }
+
+        @media (min-width:937.5px) {
+            .Title {
+                font-size: 75px
+            }
+        }
+
+        .Title-sub {
+            font-size: .34em;
+            letter-spacing: .16em;
+            font-weight: 400;
+            text-transform: none;
+            display: block;
+            margin-top: 1.2rem;
+            padding-top: 1.6rem;
+            border-top: .45em solid
+        }
+
+        .l-Wrapper {
+            width: 80%;
+            max-width: 90rem;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        @media (max-width:767px) {
+            .l-Wrapper--reset\@sm-down {
+                width: 100%
+            }
+        }
+
+        .l-Header {
+            margin-top: 6.4rem;
+            margin-bottom: 3.2rem
+        }
+
+        .l-Header-col {
+            margin-top: 3.2rem;
+            margin-bottom: 3.2rem
+        }
+
+        @media (min-width:544px) {
+            .l-Header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end
+            }
+
+            .l-Header-col:last-child:not(:first-child) {
+                text-align: right
+            }
+        }
+
+        .l-Section {
+            margin-top: 6.4rem
+        }
+
+        .l-Section+.l-Section {
+            position: relative;
+            border-top: 1px solid #ddd
+        }
+
+        .l-Section+.l-Section:before {
+            content: "";
+            font-size: 50px;
+            font-size: 8vw;
+            position: absolute;
+            top: -.1rem;
+            border-top: .153em solid;
+            width: 4rem
+        }
+
+        @media (max-width:525px) {
+            .l-Section+.l-Section:before {
+                font-size: 42px
+            }
+        }
+
+        @media (min-width:937.5px) {
+            .l-Section+.l-Section:before {
+                font-size: 75px
+            }
+        }
+
+        .l-Section-title,
+        .l-Section-content {
+            margin-top: 3.2rem
+        }
+
+        .l-Section-content>:first-child,
+        .l-Section-content>:first-child>h3 {
+            margin-top: 0
+        }
+
+        .l-Section-content>p:first-child,
+        .l-Section-content>ul:first-child {
+            margin-top: .3rem
+        }
+
+        .l-Section-group {
+            display: inline
+        }
+
+        @media (min-width:768px) {
+            .l-Section {
+                display: flex
+            }
+
+            .l-Section:before {
+                display: none
+            }
+
+            .l-Section-title {
+                flex: 0 0 24%
+            }
+        }
+
+        .l-Footer {
+            font-size: 1.4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 12.8rem -.8rem 3.2rem;
+            padding-top: 3.2rem
+        }
+
+        .l-Footer a {
+            text-decoration: none;
+            display: inline-block
+        }
+
+        .l-Footer a:not(:last-child) {
+            margin-right: 1.6rem
+        }
+
+        .l-Footer a:hover {
+            color: #111
+        }
+
+        .l-Footer-col {
+            padding-left: .8rem;
+            padding-right: .8rem
+        }
+
+        .Navbar {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 4rem;
+            letter-spacing: .28rem;
+            text-transform: uppercase;
+            width: 100%;
+            background-color: #111
+        }
+
+        .Navbar a:not(.Navbar-toggle) {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .Navbar li {
+            display: inline-block
+        }
+
+        .Navbar a {
+            display: block;
+            padding: 0 .8rem
+        }
+
+        a.Navbar-btn {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            background: #6fd1bd
+        }
+
+        a.Navbar-btn:hover {
+            background: #fa8072
+        }
+
+        @media (max-width:767px) {
+            .Navbar {
+                text-align: right
+            }
+
+            .Navbar ul:not(:first-child) {
+                display: inline-block;
+                padding-right: 1.6rem !important
+            }
+        }
+
+        .Tag {
+            color: #111;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, .4);
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+            display: inline-block;
+            padding-left: .8rem;
+            padding-right: .8rem
+        }
+
+        .Tag:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1em;
+            bottom: 0;
+            margin: auto;
+            border-radius: .2rem;
+            background-color: rgba(111, 209, 189, .5);
+            transition: all .8s .4s ease-in-out
+        }
+
+        .Tag:hover:before {
+            transform: scale(1.05, 2.4);
+            background-color: #6fd1bd;
+            transition-delay: 0s;
+            transition-duration: .2s
+        }
+
+        @media print {
+            html {
+                font-size: 50%
+            }
+
+            .l-Wrapper {
+                width: 100%;
+                max-width: none
+            }
+
+            .Navbar,
+            .u-hidden\@print {
+                display: none
+            }
+
+            .l-Header,
+            .l-Header-col {
+                margin-top: 0
+            }
+
+            .l-Footer,
+            .l-Section {
+                margin-top: 3.2rem
+            }
+
+            h3,
+            .h3,
+            .l-Section-title,
+            .l-Section-content {
+                margin-top: 1.8rem
+            }
+
+            .Title {
+                font-size: 4.5rem
+            }
+
+            .l-Header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end
+            }
+
+            .l-Header-col:last-child:not(:first-child) {
+                text-align: right
+            }
+
+            .l-Section {
+                position: relative;
+                padding-top: 5px;
+                border-top: 1px solid #ddd
+            }
+
+            .l-Section:before {
+                display: none
+            }
+
+            .l-Section:after {
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: 0;
+                border-top: 5px solid;
+                width: 4rem
+            }
+
+            .l-Section-group {
+                display: block;
+                /* page-break-inside: avoid */
+            }
+
+            .Tag {
+                font-weight: 900;
+                display: inline;
+                padding-left: 0;
+                padding-right: 0
+            }
+
+            *,
+            *:before,
+            *:after,
+            p:first-letter,
+            div:first-letter,
+            blockquote:first-letter,
+            li:first-letter,
+            p:first-line,
+            div:first-line,
+            blockquote:first-line,
+            li:first-line {
+                background: transparent !important;
+                color: #000 !important;
+                box-shadow: none !important;
+                text-shadow: none !important
+            }
+
+            a,
+            a:visited {
+                text-decoration: underline
+            }
+
+            p,
+            h2,
+            h3,
+            li {
+                orphans: 3;
+                widows: 3
+            }
+
+            h2,
+            h3 {
+                page-break-after: avoid
+            }
+
+            .Contact:after {
+                content: "(206) 960-0961";
+                padding-left: 1.6rem
+            }
+        }
+
+        @page {
+            margin: 2.2cm 2.2cm 1.8cm
+        }
+    </style>
+<style></style></head>
+
+<body data-new-gr-c-s-check-loaded="14.986.0" data-gr-ext-installed="">
+    <nav class="Navbar">
+        <div class="l-Wrapper l-Wrapper--reset@sm-down">
+            <ul class="u-pullRight u-hidden@xs-down">
+                <li>
+                    <a class="Navbar-btn Navbar-btn--main" href="https://sonjastrieder.com/download/sonja-strieder-frontend-ui-developer.pdf">
+                        Download
+                        <span>(pdf)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/sonjastrieder">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/sonjastrieder">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/sonjastrieder">CodePen</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/sonjastrieder">Twitter</a>
+                </li>
+            </ul>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+    </nav>
+
+    <article class="l-Wrapper">
+
+        <div class="l-Header">
+            <div class="l-Header-col">
+                <a href="https://www.sonjastrieder.com/">
+                    <h1 class="Title">
+                        <span class="u-shadow">
+                            Jani
+                            <br> Ahmed
+                        </span>
+                        <span class="Title-sub">Front-end UI developer</span>
+                    </h1>
+                </a>
+            </div>
+            <div class="l-Header-col Contact">
+                <div>Jalalpur Jattan,Gujrat</div>
+                <div>
+                    <a class="u-link" href="https://jani-ahmed.github.io/-/">www.sonjastrieder.com</a>
+                </div>
+                <div>
+                    <a class="u-link" href="mailto:itsjaniahmedr@gmail.com">itsjaniahmedr@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3 u-hidden@sm-down">Profile</h2>
+            <div class="l-Section-content">
+                <p>I’m a UI developer with a passion for design systems, style guides and component libraries. I enjoy
+                    creating beautiful, user-centered websites and web applications with a strong interest in clean
+                    grid design as well as elegant typography. Good eye for design and typography, high attention to
+                    detail. Great listener, curious, team player.</p>
+            </div>
+        </section>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3">Skills</h2>
+            <div class="l-Section-content">
+                <ul>
+                    <li>Highly skilled in creating performant
+                        <strong class="Tag">HTML</strong>,
+                        <strong class="Tag">CSS</strong>
+                    </li>
+                    <li>Experienced with
+                        <strong class="Tag">JavaScript</strong>,
+                        <strong class="Tag">Frameworks</strong> (Vue, Nuxt, React) and
+                        <strong class="Tag">Templating Languages</strong> (Pug, Handlebars, Mustache)
+                    </li>
+                    <li>Passionate about
+                        <strong class="Tag">CSS Methodologies</strong> (OOCSS, BEM, ACSS, SMACSS, SUIT CSS) and
+                        <strong class="Tag">CSS Preprocessors</strong> (sass, less)
+                    </li>
+                    <li>Proficient with
+                        <strong class="Tag">Task Runners / Build Tools</strong> (WebPack, Grunt, Gulp) and
+                        <strong class="Tag">Package Managers</strong> (NPM, Yarn) and
+                        <strong class="Tag">Version Control Systems</strong> (Git, SVN)
+                    </li>
+                    <li>Skilled in creating
+                        <strong class="Tag">Design Systems</strong>,
+                        <strong class="Tag">Component Libraries</strong>,
+                        <strong class="Tag">Prototypes</strong> and
+                        <strong class="Tag">Style Guides</strong>
+                    </li>
+                    <li>Knowledgeable about
+                        <strong class="Tag">WebGL</strong>,
+                        <strong class="Tag">SVG</strong>,
+                        <strong class="Tag">Animation</strong>,
+                        <strong class="Tag">User Experience</strong>,
+                        <strong class="Tag">Accessibility</strong>,
+                        <strong class="Tag">Responsive Web Development</strong> with a
+                        <strong class="Tag">Mobile First</strong> approach,
+                        <strong class="Tag">Cross-Browser Compatibilities</strong> and
+                        <strong class="Tag">Progressive Enhancement</strong>.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3">Experience</h2>
+            <div class="l-Section-content">
+                <div class="l-Section-group">
+                    <h3>Sr UI Developer</h3>
+                    <a class="u-link" href="https://indigoslate.com/">Indigo Slate, Bellevue</a> (WA)
+                    <br> Apr 2019 - Present
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>Freelance Front-end Developer</h3>
+                    <a class="u-link" href="https://sonjastrieder.com/">Self-employed, Greater Seattle Area</a> (WA)
+                    <br> May 2017 - Present
+                    <ul>
+                        <li>Developed Wordpress themes and supported in-house development teams, e.g. the Wordpress
+                            theme for the new PCC website, making use of Advanced Custom Fields plugin to allow for
+                            easier content editing.</li>
+                        <li>Created prototypes with a focus on animation, making use of GSAP and Lottie, an animation
+                            tool that renders After Effects animations in real time</li>
+                    </ul>
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>UI Developer</h3>
+                    <a class="u-link" href="https://indigoslate.com/">Indigo Slate, Bellevue</a> (WA)
+                    <br> Jun 2018 - Oct 2018
+                    <ul>
+                        <li>
+                            Built interactive experiences using Vue.js, e.g. a guided tour experience for nintex.com,
+                            allowing the user to walk through various features before signing up to the workflow
+                            automation tool.
+                        </li>
+                        <li>
+                            Developed a landing page including interactive 3D experiences using WebGl (Babylon.js) for
+                            SharePoint spaces.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>Front-end Developer</h3>
+                    <a class="u-link" href="https://www.snaptechnology.co.uk/">Snap Tech, London</a> (UK)
+                    <br> May 2014 - Jul 2016
+                    <ul>
+                        <li>Re-architected CSS/HTML codebase of the responsive Snap Fashion website for better
+                            maintainability and performance.
+                        </li>
+                        <li>Set up a build process to automate common tasks, optimize frontend assets.
+                        </li>
+                        <li>Created and maintained a style guide to use as a reference for our design language.</li>
+                        <li>Delivered front-end work for various external and internal projects to the backend team.</li>
+                        <li>Built a JavaScript widget for integration of product feeds on third party websites using
+                            the Snap Fashion API.
+                        </li>
+                        <li>Developed prototypes including a Chrome extension and browser bookmarklet.</li>
+                        <li>Offered guidance/support to the design team, advising on core web design principles,
+                            best practice and work flow.</li>
+                    </ul>
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>Web Design &amp; Interface Specialist</h3>
+                    JohnHenry, London (UK)
+                    <br> Jun 2010 - May 2014
+                    <ul>
+                        <li>Working within a team of 16+ I’ve established myself as a front-end developer with a strong
+                            focus on web standards, semantics, accessibility and progressive enhancement (HTML/CSS).</li>
+                        <li>Designed and/or built Wordpress themes as well as Shopify themes from scratch or customized
+                            them depending on the client’s needs.</li>
+                        <li>Headed the design team and designed simple and clean user interfaces.</li>
+                    </ul>
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>Web Specialist</h3>
+                    JohnHenry, London (UK)
+                    <br> Sept 2009 - Jun 2010
+                    <ul>
+                        <li>Designed websites and features as well as customized social media channels to improve
+                            their online presence.
+                        </li>
+                        <li>Content management, including image processing for the web.</li>
+                        <li>Built HTML newsletters and managed the distribution through the in house newsletter
+                            management system.</li>
+                        <li>Assisted the development team with HTML and CSS updates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3">Education</h2>
+            <div class="l-Section-content">
+                <h3>BSc, Media-technology and -design</h3>
+                <a class="u-link" href="https://www.fh-ooe.at/en/hagenberg-campus/">University of Applied Sciences
+                    Campus Hagenberg</a> (AUT)
+                <br> 2006 - 2009
+                <p>A full-time degree programme that provides the technical expertise as well as the design and
+                    communication
+                    skills in areas including web (backend and frontend development), multimedia, 3D modelling,
+                    animation, audio &amp; video production.</p>
+            </div>
+        </section>
+
+    </article>
+
+    <div class="l-Wrapper u-keyline">
+        <div class="l-Footer">
+            <div class="l-Footer-col">
+                <strong class="Tag">S. Strieder</strong>
+            </div>
+            <div class="l-Footer-col Contact">
+                <a href="https://sonjastrieder.com/">sonjastrieder.com</a>
+                <a href="mailto:sonja.strieder@gmail.com">sonja.strieder@gmail.com</a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-49119985-1', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="./Sonja Strieder - Résumé_files/analytics.js.download" async="" defer=""></script>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 
-</body>
-</html>
+
+
+</body></html>
